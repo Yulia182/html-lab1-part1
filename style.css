@@ -19,11 +19,64 @@ li {
 /* styles */
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   background-color: #f9fafc;
+  color: #000;
+}
+
+header {
+  padding: 20px;
+}
+
+h1,
+h6 {
+  font-size: medium;
+  font-weight: 500;
+}
+
+a {
+  display: block;
+  padding: 5px 0;
 }
 
 a,
 p {
   color: #69696a;
+}
+
+p {
+  border-left: #69696a solid 5px;
+  padding-left: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.call-to-action {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* footer styles */
+footer {
+  background-color: rgba(247, 193, 162, 0.7);
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-link {
+  padding-right: 10px;
 }
