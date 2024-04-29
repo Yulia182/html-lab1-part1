@@ -1,0 +1,29 @@
+/* reset styles */
+body,
+h1,
+ul,
+h2,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #f9fafc;
+}
+
+a,
+p {
+  color: #69696a;
+}
