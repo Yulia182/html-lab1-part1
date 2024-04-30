@@ -1,9 +1,9 @@
-/* reset styles */
+/* resets*/
 body,
 h1,
 ul,
 h2,
-h6 {
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -29,14 +29,9 @@ header {
 }
 
 h1,
-h6 {
+h3 {
   font-size: medium;
   font-weight: 500;
-}
-
-a {
-  display: block;
-  padding: 5px 0;
 }
 
 a,
@@ -44,13 +39,19 @@ p {
   color: #69696a;
 }
 
-p {
+.about-us {
+  /* first how thick, the type, then color */
   border-left: #69696a solid 5px;
   padding-left: 10px;
 }
 
 main {
   padding: 20px;
+}
+
+a {
+  display: block;
+  padding: 10px 0;
 }
 
 .call-to-action {
@@ -66,18 +67,37 @@ main {
 footer {
   background-color: rgba(247, 193, 162, 0.7);
   position: fixed;
+  /*  inlude left just in case for example to avoide padding situation*/
+  left: 0;
   bottom: 0;
   height: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  /* without box-sizing: border-box; padding and borders will be excluded from the dimensions of the element (width:100%) 
+  with border-box in 100% width will include the element width+its paddibgs+its border*/
+  box-sizing: border-box;
 }
 
-.footer-links {
+.footer-nav ul {
   display: flex;
 }
 
 .footer-link {
-  padding-right: 20px;
+  padding-right: 10px;
+}
+
+/* always at the bottom
+goes from smallest to largest
+1. add new styles
+2. replace existing styles from mobile */
+@media only screen and (min-width: 768px) {
+  /* circle styles */
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+  }
 }
